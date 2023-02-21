@@ -47,12 +47,10 @@ let shot = argv._[0];
 // Calling the Rock Paper Scissor Functions and outputting help and 
 // rules if the input is invalid
 try {
-    let result = JSON.stringify(rpsls(shot));
-    console.log(result);
-    //console.log(JSON.stringify(rpsls(shot)));
+    console.log(JSON.stringify(rpsls(shot)));
 } catch (error) {
-    console.log(`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:`
-        /*- Scissors
+    console.log(`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
+        - Scissors
         - CUTS Paper
         - Paper COVERS Rock
         - Rock SMOOSHES Lizard
@@ -62,7 +60,7 @@ try {
         - Lizard EATS Paper
         - Paper DISPROVES Spock
         - Spock VAPORIZES Rock
-        - Rock CRUSHES Scissors`*/
+        - Rock CRUSHES Scissors`
     );
     process.exit(0);
 }
