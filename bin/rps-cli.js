@@ -34,12 +34,12 @@ if (argv.rules || argv.r) {     // Rules message
 }
 
 // User input
-let shot = argv[0];
+let shot = argv._[0];
 
 // Calling the Rock Paper Scissor Functions and outputting help and 
 // rules if the input is invalid
 try {
-    JSON.stringify(rps(shot));
+    console.log(JSON.stringify(rps(shot)));
 } catch (error) {
     console.log(`
     Usage: node-rps [SHOT]
