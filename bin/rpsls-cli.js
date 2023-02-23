@@ -51,8 +51,33 @@ let shot = argv._[0];
 try {
     console.log(JSON.stringify(rpsls(shot)));
 } catch (error) {
-    console.error(`${shot} is out of range.`)
+   /*console.error(`${shot} is out of range.`)
     console.log(help);
     console.log(rules);
-    process.exit(0);
+    process.exit(0);*/
+    console.error(`${shot} is out of range.`);
+
+    console.log('Usage: node-rpsls [SHOT]');
+    console.log('Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n');
+    console.log('  -h, --help\t  display this help message and exit');
+    console.log('  -r, --rules\t  display the rules and exit\n');
+    console.log('Examples:');
+    console.log('  node-rpsls\t  Return JSON with single player RPSLS result');
+    console.log('\t\t  e.g. {"player":"rock"}');
+    console.log('  node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.');
+    console.log('\t\t  e.g {"player":"rock","opponent":"Spock","result":"lose"}');
+
+    console.log('Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n');
+    console.log(' Scissors CUTS Paper');
+    console.log(' Paper COVERS Rock');
+    console.log(' Rock SMOOSHES Lizard');
+    console.log(' Lizard POISONS Spock');
+    console.log(' Spock SMASHES Scissors');
+    console.log(' Scissors DECAPITATES Lizard');
+    console.log(' Lizard EATS Paper');
+    console.log(' Paper DISPROVES Spock');
+    console.log(' Spock VAPORIZES Rock');
+    console.log(' Rock CRUSHES Scissors');
+
+    process.exit(1);
 }
