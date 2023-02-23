@@ -51,11 +51,12 @@ let shot = argv._[0];
 try {
     console.log(JSON.stringify(rpsls(shot)));
 } catch (error) {
-   /*console.error(`${shot} is out of range.`)
+   console.error(`${shot} is out of range.`)
     console.log(help);
     console.log(rules);
-    process.exit(0);*/
-    console.error(`${shot} is out of range.`);
+    process.exit(1);
+
+    /*console.error(`${shot} is out of range.`);
 
     console.log('Usage: node-rpsls [SHOT]');
     console.log('Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n');
@@ -79,5 +80,5 @@ try {
     console.log(' Spock VAPORIZES Rock');
     console.log(' Rock CRUSHES Scissors');
 
-    process.exit(1);
+    process.exit(1);*/
 }
