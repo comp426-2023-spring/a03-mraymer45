@@ -59,7 +59,7 @@ let shot = argv._[0];
 let answer = rpsls(shot);
 
 if (answer == null) {
-    console.log(help);
+    // console.log(help);
     console.log(rules);
 } else {
     console.log(JSON.stringify(answer));

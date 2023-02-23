@@ -49,7 +49,7 @@ let shot = argv._[0];
     process.exit(0);
 }*/
 
-let answer = rpsls(shot);
+let answer = rps(shot);
 
 if (answer == null) {
     console.log(help);
