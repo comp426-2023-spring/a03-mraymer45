@@ -48,19 +48,10 @@ let shot = argv._[0];
 
 // Calling the Rock Paper Scissor Functions and outputting help and 
 // rules if the input is invalid
-/*try {
+try {
     console.log(JSON.stringify(rpsls(shot)));
 } catch (error) {
     console.log(help);
     console.log(rules);
     process.exit(0);
-}*/
-
-let answer = rpsls(shot);
-
-if (answer == null) {
-    // console.log(help);
-    console.log(rules);
-} else {
-    console.log(JSON.stringify(answer));
 }
