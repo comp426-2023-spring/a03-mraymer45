@@ -51,6 +51,7 @@ let shot = argv._[0];
 try {
     console.log(JSON.stringify(rpsls(shot)));
 } catch (error) {
+    console.error(`${shot} is out of range.`)
     console.log(help);
     console.log(rules);
     process.exit(0);
